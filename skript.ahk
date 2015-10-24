@@ -32,6 +32,11 @@ LWin & a::Send ^{a}				; Select all
 LWin & f::Send ^{f}				; Find
 LWin & q::Send !{f4}				; Quit
 LWin & LButton::Send ^{LButton}			; Ctrl/Cmd click
+LShift & t::			; Ctrl-Shift-T, reopen closed tab
+	If GetKeyState("LWin", "P")
+		Send ^+{t}
+	Else Send +{t}
+Return
 
 ; -----------
 ; Characters
