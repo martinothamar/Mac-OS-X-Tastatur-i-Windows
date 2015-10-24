@@ -21,6 +21,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 LWin & Tab::Send !{Tab} 					; Alt-tabbing
 LWin & t::Send ^{t}							; Cmd T > Ctrl T - Open Tab
 LWin & w::Send ^{w}							; Cmd W > Ctrl W - Close tab
+LWin & r::Send ^{r}							; Cmd R > Ctrl R - Refresh page
 LWin & c::Send ^{c}							; Copy
 LWin & v::Send ^{v}							; Paste
 LWin & x::Send ^{x}							; Cut
@@ -30,6 +31,7 @@ LWin & s::Send ^{s}							; Save
 LWin & a::Send ^{a}							; Select all
 LWin & f::Send ^{f}							; Find
 LWin & q::Send !{f4}						; Quit
+LWin & LButton::Send ^{LButton}				; Ctrl/Cmd click
 
 ; -----------
 ; Characters
