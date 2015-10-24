@@ -6,10 +6,11 @@ testet med andre Mac-tastaturer.
 
 # Bruk
 
-* Installer Autohotkey
+* Installer [Autohotkey](http://www.autohotkey.com/)
 * Dobbel-klikk skript.ahk for å installere
 * Se det grønne Autohotkey-ikonet i Windows-taskbar'en
 
 # Lisens
 
 Copyright (C) 2015, Martin Othamar
+MIT, se LICENSE.md
