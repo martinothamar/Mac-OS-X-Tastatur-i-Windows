@@ -39,6 +39,11 @@ LShift & t::														; Ctrl-Shift-T, reopen closed tab
 	Else Send +{t}
 Return
 LWin & ,::Send ^{,}											; Ctrl , (Atom settings)
+LWin & +::Send ^{+}											; Chrome zoom
+LWin & -::Send ^{-}											; Chrome zoom out
+LAlt & BS::Send ^{BS}										; Delete previous word
+#BS::Send {LShift down}{Home}{LShift Up}{Del}				; Delete line backwards
+
 
 ; -----------
 ; Characters
