@@ -48,6 +48,8 @@ LWin & -::Send ^{-}											; Chrome zoom out
 LAlt & BS::Send ^{BS}										; Delete previous word
 #BS::Send {LShift down}{Home}{LShift Up}{Del}				; Delete line backwards
 LWin & .::Send ^{.}
+WheelUp::Send {WheelDown}								; Reverse scrolling
+WheelDown::Send {WheelUp}
 
 
 ; -----------
