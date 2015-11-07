@@ -19,7 +19,11 @@ SetWorkingDir %A_ScriptDir%  						; Ensures a consistent starting directory.
 ; OS Shortcuts
 ; -------------
 LWin & Tab::AltTab 											; Alt-tabbing
-LShift & Tab::ShiftAltTab								; Reverse alt-tabbing
+LShift & Tab::
+	If GetKeyState("LWin", "P")
+		Send !+{Tab}
+	Else Send +{Tab}
+Return
 LWin & t::Send ^{t}											; Cmd T > Ctrl T - Open Tab
 LWin & w::Send ^{w}											; Cmd W > Ctrl W - Close tab
 LWin & r::Send ^{r}											; Cmd R > Ctrl R - Refresh page
@@ -43,6 +47,7 @@ LWin & +::Send ^{+}											; Chrome zoom
 LWin & -::Send ^{-}											; Chrome zoom out
 LAlt & BS::Send ^{BS}										; Delete previous word
 #BS::Send {LShift down}{Home}{LShift Up}{Del}				; Delete line backwards
+LWin & .::Send ^{.}
 
 
 ; -----------
